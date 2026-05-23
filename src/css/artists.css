@@ -1,0 +1,64 @@
+
+#cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background: var(--primary);
+    padding-top: 35px;
+    padding-bottom: 50px;
+    padding: 3% 7%;
+}
+
+.card{
+    background: white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.card:hover{
+    filter: brightness(70%);
+}
+
+.card img{
+    width : 100%;
+    aspect-ratio: 270 / 152;
+    object-fit: cover;
+    display:block;
+    filter: grayscale(100%)
+}
+
+.card h2{
+    background: white;
+    color: #222;
+    text-align: center;
+    padding: 10px;
+    font-size: clamp(18px, 2vw, 25px);
+    font-weight: 700;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.filtre{
+    display: flex;
+    padding: 20px;
+    background-color: #c0b6b4;
+    gap: 35px;
+}
+
+.first-section img{
+    display: block;
+    object-fit: cover;
+}
+
+.filtre button{
+    border: solid 2px var(--secondary);
+    padding: 10px;
+    background-color: #c0b6b4;
+}
+
+.artists-searchbar{
+    background-color: #b2a8a6;
+    border: none;
+}
