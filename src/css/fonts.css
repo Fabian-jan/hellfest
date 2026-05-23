@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Iconochive';
+    src: url('../assets/fonts/Iconochive-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Novecento Sans Wide';
+    src: url('../assets/fonts/Novecentosanswide-DemiBold-webfont.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../assets/fonts/titillium-regular-webfont.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../assets/fonts/titillium-bold-webfont.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url('../assets/fonts/Tungsten-Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url('../assets/fonts/Tungsten-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url('../assets/fonts/Tungsten-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    font-size: 16px;
+}

@@ -1,2 +1,7 @@
-// DONT TOUCH THIS FILE, IT'S THE ENTRY POINT OF YOUR JS CODE. ALL YOUR SCRIPTS MUST BE IMPORTED IN THIS FILE
+// Les scripts JS sont importés dans ce fichier
+
 import * as scripts from './scripts.js';
+
+import { loadComponent } from './include.js'; 
+
+await loadComponent('#header', './components/header.html');

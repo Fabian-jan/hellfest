@@ -1,0 +1,128 @@
+<nav class="header-nav">
+
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+            <img src="src/assets/img/header/hellfest-logo.png" alt="Hellfest 2K16 Logo">
+            <div class="when-where">
+                <div class="when">17-18-19 JUIN 2016</div>
+                <div class="where">CLISSON FRANCE</div>
+            </div>
+        </a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="navbar-collapse">
+
+        <ul class="nav navbar-nav">
+
+            <li><a href="/pages/artists.html">Artistes</a></li>
+            <li><a href="/pages/news.html">News</a></li>
+            <li><a href="/pages/festival.html">Le Festival</a></li>
+            <li><a href="/pages/infos.html">Infos</a></li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+<style>
+    .header-nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 108px;
+        font-family: 'Tungsten-Book';
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background-color: var(--secondary);
+        margin: 0 auto;
+
+        & .navbar-header {
+            float: left;
+
+            & .navbar-brand {
+                display: flex;
+                padding: 15px 20px;
+
+                & img {
+                    width: 138px;
+                    height: auto;
+                    margin-top: 10px;
+                }
+
+                & .when-where {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    line-height: 22px;
+                    margin-left: 20px;
+
+                    & .when {
+                        font-family: 'Tungsten';
+                        font-weight: 500;
+                        font-size: 1.2rem;
+                        color: var(--tertiary);
+                    }
+
+                    & .where {
+                        font-family: 'Tungsten';
+                        font-weight: 500;
+                        font-size: 1.1rem;
+                        color: var(--primary);
+                    }
+                }
+            }
+
+            & .navbar-toggle {
+                display: none;
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                width: 30px;
+                height: 30px;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+
+                & .icon-bar {
+                    display: block;
+                    width: 100%;
+                    height: 4px;
+                    background-color: var(--tertiary);
+                    margin-bottom: 5px;
+                    transition: all 0.3s ease-in-out;
+                }
+
+            }
+
+        }
+
+        & .navbar-collapse {
+
+            & ul {
+                display: flex;
+                gap: var(--spacing-medium);
+
+                & li {
+                    padding: 15px;
+
+                    & a {
+                        font-family: 'Tungsten';
+                        font-weight: 400;
+                        font-size: 1.1rem;
+                        color: var(--tertiary);
+                    }
+
+                }
+
+            }
+
+        }
+    }
+</style>
