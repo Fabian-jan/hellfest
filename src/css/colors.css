@@ -1,6 +1,9 @@
 :root {
     --primary: #ef434f;
+    --primary-dark: #c6323e;
     --secondary: #201c1d;
+    --tertiary-light: #e2ddda;
     --tertiary: #c0b5b1;
+    --tertiary-dark: #3f3b3a;
     --grey-light: #ececec;
 }

@@ -1,7 +1,7 @@
 <nav class="header-nav">
 
     <div class="navbar-header">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/index.html">
             <img src="../src/assets/img/header/hellfest-logo.png" alt="Hellfest 2K16 Logo">
             <div class="when-where">
                 <div class="when">17-18-19 JUIN 2016</div>
@@ -27,16 +27,25 @@
 
         </ul>
 
+        <div class="navbar-right">
+            <a href="#" class="lang">UK</a>
+            <a href="#" class="tickets">
+                <img src="../src/assets/img/header/3-day-pass1.png" alt="Pass 3 days">
+            </a>
+        </div>
+
     </div>
 
 </nav>
 
 <style>
     .header-nav {
+        position: fixed;
+        top: 0;
         display: flex;
         align-items: center;
         width: 100%;
-        min-height: 108px;
+        height: 108px;
         font-family: 'Tungsten-Book';
         letter-spacing: 2px;
         text-transform: uppercase;
@@ -45,15 +54,15 @@
 
         & .navbar-header {
             float: left;
+            min-width: 400px;
 
             & .navbar-brand {
                 display: flex;
-                padding: 15px 20px;
+                padding: var(--spacing-small);
 
                 & img {
-                    width: 138px;
+                    width: 190px;
                     height: auto;
-                    margin-top: 10px;
                 }
 
                 & .when-where {
@@ -66,14 +75,14 @@
                     & .when {
                         font-family: 'Tungsten';
                         font-weight: 500;
-                        font-size: 1.2rem;
+                        font-size: 1.35rem;
                         color: var(--tertiary);
                     }
 
                     & .where {
                         font-family: 'Tungsten';
                         font-weight: 500;
-                        font-size: 1.1rem;
+                        font-size: 1.2rem;
                         color: var(--primary);
                     }
                 }
@@ -104,25 +113,78 @@
         }
 
         & .navbar-collapse {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
 
             & ul {
                 display: flex;
-                gap: var(--spacing-medium);
+                flex-grow: 1;
+                /* gap: var(--spacing-medium); */
 
                 & li {
-                    padding: 15px;
+
+                    &:last-child a {
+                        border-right: none;
+                    }
 
                     & a {
                         font-family: 'Tungsten';
                         font-weight: 400;
-                        font-size: 1.1rem;
-                        color: var(--tertiary);
+                        font-size: 1.2rem;
+                        color: var(--tertiary-light);
+                        border-right: 1px solid var(--tertiary-dark);
+                        padding: 0 15px;
+                        transition: color 0.3s ease-in-out;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: var(--tertiary);
+                            transition: color 0.3s ease-in-out;
+                        }
+
                     }
 
                 }
 
             }
 
+            & .navbar-right {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                margin-left: auto;
+
+                & .lang {
+                    display: inline-block;
+                    height: 28px;
+                    width: 28px;
+                    background-image: url("../src/assets/img/header/bg-uk.png");
+                    background-repeat: no-repeat;
+                    background-size: 27px 28px;
+                    font-family: 'Titillium';
+                    font-weight: 400;
+                    font-size: .8rem;
+                    text-align: center;
+                    color: var(--tertiary-light);
+                    margin: var(--spacing-large);
+                    cursor: pointer;
+                }
+
+                & .tickets {
+                    display: inline-block;
+                    height: 100%;
+                    background-color: var(--primary-dark);
+                    padding: 15px;
+
+                    & img {
+                        width: 155px
+                    }
+                }
+
+            }
         }
     }
 </style>
