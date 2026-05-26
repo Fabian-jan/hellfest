@@ -39,7 +39,7 @@
 }
 
 @font-face {
-    font-family: 'Tungsten';
+    font-family: 'Tungsten_medium';
     src: url('../assets/fonts/Tungsten-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-    font-family: 'Tungsten';
+    font-family: 'Tungsten_semibold';
     src: url('../assets/fonts/Tungsten-Semibold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;

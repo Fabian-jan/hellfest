@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+.slide_video {
+    background-image: url(../assets/img/festival/bg-video.jpg);
+    width: 1486.4px;
+    height: 490.8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 105px;
+}
+
+.title h1 {
+    color: #e2ddda;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Tungsten_semibold';
+    font-size: 90px;
+    letter-spacing: 2px;
+    line-height: 90px;
+    padding-top: 40px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 400px;
+    height: 200px;
+}
+
+
+
+@font-face {
+    font-family: 'Tungsten_semibold';
+    src: url('../assets/fonts/Tungsten-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
