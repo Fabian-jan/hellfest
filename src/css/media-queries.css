@@ -1,5 +1,9 @@
 /* BREAKPOINTS — Hellfest.fr 2016 */
 
+/* small mobile */
+@media screen and (max-width: 480px) {
+}
+
 /* mobile */
 @media screen and (max-width: 639px) {
 }
