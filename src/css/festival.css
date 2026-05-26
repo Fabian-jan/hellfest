@@ -34,12 +34,44 @@
     height: 200px;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.button button {
+    width: 150px;
+    height: 40px;
+    background-color: #201c1d;
+    color: #ef434f;
+    font-family: 'Titillium_bold';
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.button button img {
+    height: 75%;
+    width: auto;
+}
 
 
 @font-face {
     font-family: 'Tungsten_semibold';
     src: url('../assets/fonts/Tungsten-Semibold.otf') format('opentype');
     font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Titillium_bold';
+    src: url('../assets/fonts/titillium-bold-webfont.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
