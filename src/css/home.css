@@ -3,7 +3,7 @@
     max-height: 545px;
     background-color: var(--secondary);
     text-align: center;
-    padding-top: 108px;
+    margin-top: 108px;
 
     & img {
         height: auto;
@@ -27,10 +27,49 @@
 .call-home {
     background-color: var(--secondary);
     padding: 15px 0;
+
+    & .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-large);
+
+        & .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            min-height: 40px;
+            background-position: center right;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: "Tungsten";
+            font-weight: 600;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+
+            &:first-child {
+                background-image: url("/src/assets/img/home/texture-light.png");
+                color: var(--secondary);
+            }
+
+            &:last-child {
+                background-image: url("/src/assets/img/home/texture-rouge-home.png");
+                color: var(--tertiary);
+            }
+
+            & img {
+                width: 30px;
+                height: 22px;
+                margin-right: 8px;
+            }
+        }
+    }
 }
 
 .focus-home {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding: 40px 0 25px;
 }
 
