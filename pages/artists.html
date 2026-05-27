@@ -7,6 +7,7 @@
     <title>Artists - Hellfest Open Air</title>
     <link rel="stylesheet" href="/src/css/styles.css">
     <link rel="stylesheet" href="/src/css/artists.css">
+    <link rel="icon" href="src/assets/img/artists/favicon.png">
 </head>
 
 <body>
@@ -17,15 +18,32 @@
     </section>
 
     <section class="filtre">
-        <button>Customize your running order</button>
-        <input class="artists-searchbar" type="text" placeholder="Search">
+        <div class="dropdown-container">
+            <button class="dropdown-btn">
+                FILTRER PAR JOUR
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <ul class="dropdown-jour-semaine">
+                <li>VENDREDI</li>
+                <li>SAMEDI</li>
+                <li>DIMANCHE</li>
+            </ul>
+        </div>
+
+        <button id="customize">CUSTOMIZE YOUR RUNNING ORDER</button>
+        <div class="artists-searchbar">
+            <input class="artists-searchbar" type="text" placeholder="SEARCH">
+            <button class="magnifying-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
     </section>
 
-    <section id="cards-container"></section>
-
-    <section>
-
+    <section class="artists">
+        <article id="cards-container"></article>
+        <article class="artists-container"></article>
     </section>
+
     <footer>
 
     </footer>
@@ -34,7 +52,7 @@
     <!-- JS INDEX IMPORT SCRIPTS -->
     <script type="module" src="../src/js/index.js"></script>
     <script type="module" src="../src/js/artists-cards.js"></script>
-
+    <script src="https://kit.fontawesome.com/839fb27858.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
