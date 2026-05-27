@@ -163,9 +163,14 @@ body {
         }
 
         & .content-news-item {
-            max-height: calc(100% - 42px);
+            height: calc(100% - 42px);
             background: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+            font-family: "Titillium";
+            font-weight: 400;
+
+            &.news {
+            }
 
             &.twitter {
                 overflow-y: auto;
@@ -175,8 +180,7 @@ body {
                     padding: 0 var(--spacing-medium);
                     & li {
                         color: var(--tertiary-dark);
-                        font-family: "Titillium";
-                        font-weight: 400;
+
                         padding: var(--spacing-small) 0;
 
                         &:not(:first-child) {
@@ -186,6 +190,37 @@ body {
                         & a {
                             color: var(--primary-dark);
                         }
+                    }
+                }
+            }
+
+            &.hellfest-clan {
+                & > a {
+                    justify-content: space-between;
+                    gap: var(--spacing-small);
+                    padding: var(--spacing-medium);
+                    background-color: var(--primary-dark);
+                    color: white;
+
+                    &:nth-child(even) {
+                        background-color: var(--primary);
+                    }
+
+                    & img {
+                        height: 35px;
+                    }
+
+                    & .reseau {
+                        flex-basis: 50%;
+                        font-size: 1.1rem;
+                        font-family: "Novecento Sans Wide";
+                        font-weight: 600;
+                    }
+
+                    & .abonnes {
+                        flex-basis: 50%;
+                        text-align: right;
+                        font-size: 0.9rem;
                     }
                 }
             }
