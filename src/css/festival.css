@@ -170,25 +170,23 @@
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-
     text-align: center;
     color: white;
     font-family: 'Titillium';
-
     padding-top: 120px;
     padding-left: 20px;
     padding-right: 20px;
-
     box-sizing: border-box;
 }
 
 .conclusion img {
     display: block;
     margin: 40px auto 0 auto;
-
     width: 120px;
     height: auto;
 }
+
+
 
 @font-face {
     font-family: 'Tungsten_semibold';
