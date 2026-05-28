@@ -83,6 +83,113 @@
     left: 50PX;
 }
 
+.second_image {
+    position: relative;
+    background-image: url(../assets/img/festival/festival-02.jpg);
+    width: 1600.4px;
+    height: 600.8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+}
+
+.texte_hellfest p {
+    background-color: white;
+    width: 680PX;
+    padding: 40PX;
+    color: black;
+    text-align: center;
+    margin-left: 660PX;
+    font-family: 'Titillium';
+    position: absolute;
+    top: 100px;
+    right: 800px;
+}
+
+.third_image {
+    position: relative;
+    background-image: url(../assets/img/festival/festival-03.jpg);
+    width: 1600.4px;
+    height: 600.8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+}
+
+.description p {
+    background-color: white;
+    width: 680PX;
+    padding: 40PX;
+    color: black;
+    text-align: center;
+    margin-left: 660PX;
+    font-family: 'Titillium';
+    position: absolute;
+    top: 100px;
+    left: 50PX;
+}
+
+.fourth_image {
+    position: relative;
+    background-image: url(../assets/img/festival/festival-04.jpg);
+    width: 1600.4px;
+    height: 600.8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+}
+
+.final p {
+    background-color: white;
+    width: 680PX;
+    padding: 40PX;
+    color: black;
+    text-align: center;
+    margin-left: 660PX;
+    font-family: 'Titillium';
+    position: absolute;
+    top: 100px;
+    right: 800px;
+}
+
+.last_image {
+    position: relative;
+    background-image: url(../assets/img/festival/festival-05.jpg);
+    width: 100%;
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+}
+
+.conclusion p {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+    color: white;
+    font-family: 'Titillium';
+
+    padding-top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    box-sizing: border-box;
+}
+
+.conclusion img {
+    display: block;
+    margin: 40px auto 0 auto;
+
+    width: 120px;
+    height: auto;
+}
+
 @font-face {
     font-family: 'Tungsten_semibold';
     src: url('../assets/fonts/Tungsten-Semibold.otf') format('opentype');
