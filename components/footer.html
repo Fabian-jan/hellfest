@@ -1,0 +1,129 @@
+<div class="partners">
+    <div class="container">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="/src/assets/img/footer/digitick.png" alt="digitick ling"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/src/assets/img/footer/kronenbourg.png" alt="kronenbourg link"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/src/assets/img/footer/deezer.png" alt="deezer link"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/src/assets/img/footer/rtl2.png" alt="rtl2 link"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container-footer">
+    <div class="container">
+        <img src="\src\assets\img\footer\hellfest-footer.png" alt="hellfest logo footer">
+        <div class="social-logo">
+            <a href="https://www.facebook.com/hellfest">
+                <img src="\src\assets\img\footer\facebook-footer.png" alt="facebook logo">
+            </a>
+            <a href="https://www.twitter.com/hellfestopenair">
+                <img src="\src\assets\img\footer\twitter-footer.png" alt="twitter logo">
+            </a>
+            <a href="https://www.instagram.com/hellfestopenair">
+                <img src="\src\assets\img\footer\instagram-footer.png" alt="instagram logo">
+            </a>
+        </div>
+        <div class="menu-footer">
+            <a href="#">Partenaires</a>
+            <a href="#">Sav digitik</a>
+            <a href="#">contact</a>
+            <a href="#">mentions légales</a>
+            <a href="#">crédits</a>
+        </div>
+    </div>   
+</div>
+<style>
+    footer {
+        position: relative;
+        &::before{
+            content:"";
+            width:100%;
+            height:9px;
+            background-image: url("/src/assets/img/footer/decoupe.png");
+            background-size: 374px 9px;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: -9px;
+        }
+
+        & .partners {
+            background-color: var(--tertiary);
+            & ul {
+                list-style-type: none;
+                text-align: center;
+                padding: 50px 0 25px;
+                
+                background-image: url("/src/assets/img/footer/Hfooter.png");
+                background-position-x: 50%;
+                background-position-y: 15px;
+                background-size: 424px 33px;
+                background-repeat: no-repeat;
+
+                & li {
+                    display: inline-block;
+                    margin: 10px 35px;
+                    & img {
+                        height: 24px;
+
+                    }
+                }
+
+            }
+        }
+
+        & .container-footer {
+            background-color: var(--secondary);
+
+            & .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+                & > img {
+                    height: 60px;
+                }
+                & .social-logo {
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+    
+                    & a img{
+                        margin: 0 var(--spacing-small);
+                        width: 26px;
+                        vertical-align: middle;
+                    }
+                }
+    
+                & .menu-footer {
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: right;
+                    
+                    & a{
+                        margin: 0 var(--spacing-small);
+                        letter-spacing: 2px;
+                        color: var(--tertiary);
+                        text-transform: uppercase;
+                        font-family: 'Tungsten';
+                        font-weight: "400";
+                    }
+                }
+            }
+
+                
+        }
+
+    }
+</style>
