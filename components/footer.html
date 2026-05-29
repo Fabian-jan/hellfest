@@ -20,7 +20,29 @@
         </ul>
     </div>
 </div>
-<div class="container-footer"></div>
+<div class="container-footer">
+    <div class="container">
+        <img src="\src\assets\img\footer\hellfest-footer.png" alt="hellfest logo footer">
+        <div class="social-logo">
+            <a href="https://www.facebook.com/hellfest">
+                <img src="\src\assets\img\footer\facebook-footer.png" alt="facebook logo">
+            </a>
+            <a href="https://www.twitter.com/hellfestopenair">
+                <img src="\src\assets\img\footer\twitter-footer.png" alt="twitter logo">
+            </a>
+            <a href="https://www.instagram.com/hellfestopenair">
+                <img src="\src\assets\img\footer\instagram-footer.png" alt="instagram logo">
+            </a>
+        </div>
+        <div class="menu-footer">
+            <a href="#">Partenaires</a>
+            <a href="#">Sav digitik</a>
+            <a href="#">contact</a>
+            <a href="#">mentions légales</a>
+            <a href="#">crédits</a>
+        </div>
+    </div>   
+</div>
 <style>
     footer {
         position: relative;
@@ -36,7 +58,8 @@
             top: -9px;
         }
 
-        & .partners {background-color: var(--tertiary);
+        & .partners {
+            background-color: var(--tertiary);
             & ul {
                 list-style-type: none;
                 text-align: center;
@@ -58,6 +81,48 @@
                 }
 
             }
+        }
+
+        & .container-footer {
+            background-color: var(--secondary);
+
+            & .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+                & > img {
+                    height: 60px;
+                }
+                & .social-logo {
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+    
+                    & a img{
+                        margin: 0 var(--spacing-small);
+                        width: 26px;
+                        vertical-align: center;
+                    }
+                }
+    
+                & .menu-footer {
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: right;
+                    
+                    & a{
+                        margin: 0 var(--spacing-small);
+                        letter-spacing: 2px;
+                        color: var(--tertiary);
+                        text-transform: uppercase;
+                        font-family: 'Tungsten';
+                        font-weight: "400";
+                    }
+                }
+            }
+
+                
         }
 
     }
