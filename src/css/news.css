@@ -1,22 +1,55 @@
-.news-banner {
+@import url('/src/css/fonts.css');
+
+.banner {
+    display: flex;
+    background-image: url('/src/assets/img/news/news-images-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height:275px;
+    width: 100%;
+    height: 40vh;
     margin-top: 108px;
+    text-align: start;
+    justify-content: start;
+    position: relative;
+}
+
+
+
+
+.frameNews {
+    position: absolute;
+    transform: rotate(-90deg);
+    scale: 0.6;
+}
+
+.logoHFnews {
+    position: absolute;
+    scale: 0.7
+}
+
+h1 {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-size: 2.5rem;
+    font-family: 'Tungsten';
+    font-weight: 400;
+    color: #C0B6B3;
 }
 
 #news-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(236, 65, 74, 1) 0%,
-        rgba(55, 51, 50, 1) 100%
-    );
-;
+    gap: 2rem;
+    position: absolute;
+    padding: 5rem;
+    width: fit-content;
+    background-image: linear-gradient(to bottom,
+            rgba(236, 65, 74, 1) 0%,
+            rgba(55, 51, 50, 1) 100%);
+    ;
     padding-top: 2rem;
     padding-bottom: 3rem;
+    align-items: center;
 }
 
 .card {
@@ -27,10 +60,35 @@
 
 .card-img {
     width: 100%;
-    height: 150px;
     object-fit: cover;
 }
 
 .card-body {
     padding: 15px
+}
+
+.card h2 {
+    font-family: 'Titillium', sans-serif;
+    font-size: 1rem
+}
+
+.card h3 {
+    font-family: 'Titillium', sans-serif;
+    font-size: 0.9rem;
+    color: #5a5655;
+}
+
+.card p {
+    font-family: 'Titillium', sans-serif;
+    font-size: 0.9rem;
+}
+
+.card p button {
+    padding: 5px 20px;
+    font-family: 'Tungsten-semibold';
+    font-size: 1.3rem;
+    background: url('/src/assets/img/news/texture-lien.png') center right no-repeat;
+    color: #c2b8b4;
+    text-align: right;
+    width: 100%;
 }
