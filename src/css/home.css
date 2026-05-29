@@ -9,7 +9,7 @@ body {
 .focus-artistes {
     height: auto;
     max-height: 545px;
-    background-color: var(--secondary);
+    background-color: #1f1f1f;
     text-align: center;
     margin-top: 108px;
 
@@ -145,7 +145,7 @@ body {
         }
 
         & .actus-item {
-            height: 460px;
+            height: 456px;
         }
 
         & .titre-actu-home {
@@ -170,6 +170,49 @@ body {
             font-weight: 400;
 
             &.news {
+                position: relative;
+                & article {
+                    &:not(:first-child) a {
+                        border-top: 1px solid var(--grey-light);
+                    }
+                    & a {
+                        justify-content: flex-start;
+                        gap: var(--spacing-medium);
+                        width: 100%;
+                        padding: var(--spacing-small);
+
+                        & img {
+                            width: 70px;
+                        }
+
+                        & .content-news {
+                            & span {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+                & .more-action {
+                    position: absolute;
+                    bottom: 0;
+                    justify-content: flex-end;
+                    width: 100%;
+                    font-family: "Tungsten";
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    letter-spacing: 1px;
+                    background-image: url("/src/assets/img/home/texture.png");
+                    background-position: center right;
+                    background-repeat: no-repeat;
+                    color: #c2b8b4 !important;
+                    text-align: right;
+                    padding: 5px var(--spacing-medium);
+
+                    & img {
+                        width: 30px;
+                        margin-right: var(--spacing-small);
+                    }
+                }
             }
 
             &.twitter {
@@ -198,9 +241,9 @@ body {
                 & > a {
                     justify-content: space-between;
                     gap: var(--spacing-small);
-                    padding: var(--spacing-medium);
                     background-color: var(--primary-dark);
                     color: white;
+                    padding: 24px var(--spacing-medium);
 
                     &:nth-child(even) {
                         background-color: var(--primary);
