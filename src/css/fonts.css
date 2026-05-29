@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: 'Titillium';
+    font-family: 'Titillium_bold';
     src: url('../assets/fonts/titillium-bold-webfont.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-    font-family: 'Tungsten';
+    font-family: 'Tungsten_medium';
     src: url('../assets/fonts/Tungsten-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-    font-family: 'Tungsten';
+    font-family: 'Tungsten_semibold';
     src: url('../assets/fonts/Tungsten-Semibold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
