@@ -153,12 +153,6 @@ if (container) {
             text: "HELLFEST – BILAN ENVIRONNEMENT 2015 / CONCOURS ANIMA’GREEN / 4 pass pour 2016 Les équipes d’ANIMA’GREEN (association Animaje), des Connexions ..."
         },
         {
-            name: "PREMIERE ANNONCE",
-            image: null,
-            date: "30-10-2015",
-            text: "«&nbsp;Bloody hell&nbsp;!&nbsp;» Ca y est, nous sommes enfin en mesure de vous dévoiler la première grosse vague de groupes qui seront à l’affiche du Hellfest 2..."
-        },
-        {
             name: "PASS 3 JOURS COMPLETS",
             image: '/src/assets/img/news/sold-out.png',
             date: "30-10-2015",
@@ -170,12 +164,6 @@ if (container) {
             date: "27-10-2015",
             text: "C’est donc vendredi prochain, le 30 octobre, que le HELLFEST révèlera enfin les premiers noms de son affiche 2016…. Le 15 septembre dernier, ..."
         },
-        {
-            name: "DU FURY FEST AU HELLFEST, TOUTE L'HISTOIRE DU FESTIVAL",
-            image: '/src/assets/img/news/hellfest-book.png',
-            date: "27-10-2015",
-            text: "Le Hellfest ? Le troisième plus gros festival de musique en France. Cet événement majeur et incontournable de la musique Métal est reconnu dans le mond..."
-        },
     ];
 
     news.forEach((item) => {
@@ -183,7 +171,7 @@ if (container) {
     <article class="card">
     <img src="${item.image}" alt="${item.name}" class="card-img">
     <h2>${item.name}</h2>
-    <h3>${item.date}</h3><p class="resume">${item.text}</p><p><button>Lire la suite</button></p></article>`;
+    <h3>${item.date}</h3><p class="resume">${item.text}</p><p><button><img src="/src/assets/img/news/arrow-light.png">Lire la suite</button></p></article>`;
 
     })
 }
