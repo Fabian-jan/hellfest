@@ -1,6 +1,7 @@
 @import url('/src/css/fonts.css');
 
-.banner {position:;
+.banner {
+    /* position: */
     background-image: url('/src/assets/img/news/news-images-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,7 +10,8 @@
     margin-top: 108px;
     
 }
-.text-banner{position: relative;
+.text-banner{
+    /* position: relative; */
 top:50%;
 left:50px;}
 
@@ -20,7 +22,8 @@ left:50px;}
     transform: rotate(-90deg);
     scale: 0.6;
 }
-.frame-content {position: absolute;
+.frame-content {
+    /* position: absolute; */
     inset:0;
     display:flex;
     align-items: center;
@@ -45,7 +48,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    position: absolute;
+    /*position: absolute;*/
     padding: 5rem;
     width: fit-content;
     background-image: linear-gradient(to bottom,
@@ -74,18 +77,23 @@ h1 {
 
 .card h2 {
     font-family: 'Titillium', sans-serif;
-    font-size: 1rem
+    font-size: 1rem;
+    padding: 0.5rem;
 }
 
 .card h3 {
     font-family: 'Titillium', sans-serif;
     font-size: 0.9rem;
     color: #5a5655;
+    padding: 0.5rem;
 }
 
 .card p {
     font-family: 'Titillium', sans-serif;
     font-size: 0.9rem;
+}
+.resume{
+    padding: 0.5rem;
 }
 
 .card p button {

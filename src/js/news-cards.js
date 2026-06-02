@@ -183,7 +183,7 @@ if (container) {
     <article class="card">
     <img src="${item.image}" alt="${item.name}" class="card-img">
     <h2>${item.name}</h2>
-    <h3>${item.date}</h3><p>${item.text}</p><p><button>Lire la suite</button></p></article>`;
+    <h3>${item.date}</h3><p class="resume">${item.text}</p><p><button>Lire la suite</button></p></article>`;
 
     })
 }
