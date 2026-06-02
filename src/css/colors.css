@@ -1,6 +1,6 @@
 :root {
     --primary: #ef434f;
-    --primary-dark: #c6323e;
+    --primary-dark: color-mix(in srgb, var(--primary) 80%, black);
     --secondary: #201c1d;
     --tertiary-light: #e2ddda;
     --tertiary: #c0b5b1;
