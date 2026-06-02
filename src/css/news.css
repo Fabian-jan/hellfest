@@ -16,13 +16,11 @@
     
 }
     
-
-
-
 .frameNews {display:block;
     width: 15rem;
     transform: rotate(-90deg);
     scale: 0.6;
+    opacity:0.5;
 }
 
 .frame-content {position: absolute;
@@ -30,7 +28,7 @@
     left:50%;
     transform: translate(-50%, -60%);
     text-align: center;
-    ;
+    opacity:0.5;
 }
 
 .logoHFnews {width:fit-content;
