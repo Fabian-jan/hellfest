@@ -6,19 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>-- News - Hellfest 2K16 --</title>
     <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/news.css">
 </head>
-
 <body>
-
     <!-- HEADER COMPONENT -->
     <header id="header"></header>
-
+    <!-- BANNER -->
+    <div class="banner">
+        <div class="text-banner">
+            <img src="/src/assets/img/news/cadre-news.png" class="frameNews">
+                <div class="frame-content">
+                    <img src="/src/assets/img/news/logoHFnews.png" class="logoHFnews">
+                    <h1> NEWS </h1>
+                </div>
+        </div>
+    </div>
+    <main>
+        <!-- cards -->
+        <section id="news-cards"></section>
+    </main>
     <!-- FOOTER COMPONENT -->
     <footer id="footer"></footer>
-    
+
     <!-- JS INDEX IMPORT SCRIPTS -->
+    <script type="module" src="../src/js/news-cards.js"></script>
     <script type="module" src="../src/js/index.js"></script>
-
 </body>
-
 </html>
