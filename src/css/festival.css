@@ -101,14 +101,10 @@
     justify-content: flex-end;
 }
 
-
-
 .second_image {
     background-image: url(/src/assets/img/festival/festival-02.jpg);
     height: 600px;
 }
-
-
 
 .third_image {
     background-image: url(/src/assets/img/festival/festival-03.jpg);
@@ -116,13 +112,10 @@
     justify-content: flex-end;
 }
 
-
-
 .fourth_image {
     background-image: url(/src/assets/img/festival/festival-04.jpg);
     height: 600px;
 }
-
 
 .last_image {
     background-image: url(/src/assets/img/festival/festival-05.jpg);
