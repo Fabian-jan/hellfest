@@ -64,8 +64,11 @@ h1 {width:fit-content;
     background: white;
     overflow: hidden;
     cursor: pointer;
+    transition:all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
-
+.card:hover {transform:translateY(-0.8px);
+    scale: 1.02;
+}
 .card-img {
     width: 100%;
     object-fit: cover;
@@ -107,10 +110,18 @@ h1 {width:fit-content;
     cursor:pointer;
 }
 
-.card p button img{
+.card p button div img{
     width:1.8rem;
     vertical-align: middle;
+    margin-right:0.7rem;
     
+}
+.button-slider {
+    transition: transform 0.3s ease-in-out;
+}
+
+.button-slider:hover{
+    transform:translateX(1rem)
 }
 
 @media screen and (max-width: 768px) {

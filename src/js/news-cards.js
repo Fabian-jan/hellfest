@@ -173,7 +173,7 @@ if (container) {
     <h2>${item.name}</h2>
     <h3>${item.date}</h3>
     <p class="resume">${item.text}</p>
-    <p><button><img src="/src/assets/img/news/arrow-light.png">Lire la suite</button></p>
+    <p ><button><div class="button-slider"><img src="/src/assets/img/news/arrow-light.png">Lire la suite</div></button></p>
     </article>`;
 
     })
