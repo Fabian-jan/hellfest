@@ -9,3 +9,15 @@
         translate: 0;
     }
 }
+
+@keyframes fade-right {
+    from {
+        opacity: 0;
+        translate: 50px 0;
+    }
+
+    to {
+        opacity: 100%;
+        translate: 0;
+    }
+}

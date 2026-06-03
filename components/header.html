@@ -2,14 +2,13 @@
 
     <div class="navbar-header">
         <a class="navbar-brand" href="/index.html">
-            <img src="../src/assets/img/header/hellfest-logo.png" alt="Hellfest 2K16 Logo">
+            <img src="/src/assets/img/header/hellfest-logo.png" alt="Hellfest 2K16 Logo">
             <div class="when-where">
                 <div class="when">17-18-19 JUIN 2016</div>
                 <div class="where">CLISSON FRANCE</div>
             </div>
         </a>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -62,8 +61,12 @@
                 padding: var(--spacing-small);
 
                 & img {
-                    width: 190px;
+                    width: 150px;
                     height: auto;
+
+                    @media screen and (min-width: 992px) {
+                        width: 190px;
+                    }
                 }
 
                 & .when-where {
@@ -92,20 +95,25 @@
             & .navbar-toggle {
                 display: none;
                 position: absolute;
-                top: 15px;
-                right: 20px;
+                top: 50%;
+                right: var(--spacing-large);
+                translate: 0 -50%;
                 width: 30px;
                 height: 30px;
                 background-color: transparent;
                 border: none;
                 cursor: pointer;
 
+                @media screen and (max-width: 991px) {
+                    display: block;
+                }
+
                 & .icon-bar {
                     display: block;
                     width: 100%;
-                    height: 4px;
+                    height: 3px;
                     background-color: var(--tertiary);
-                    margin-bottom: 5px;
+                    margin-bottom: 8px;
                     transition: all 0.3s ease-in-out;
                 }
 
@@ -114,11 +122,46 @@
         }
 
         & .navbar-collapse {
-            display: flex;
+            display: none;
             align-items: center;
             justify-content: space-between;
             height: 100%;
             width: 100%;
+
+            @media screen and (min-width: 992px) {
+                display: flex;
+            }
+
+            &.is-open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 108px;
+                right: 0;
+                width: 80%;
+                height: calc(100vh - 108px);
+                background-color: color-mix(in srgb, var(--primary) 80%, transparent);
+                padding: 20px 0;
+                opacity: 0;
+                translate: 50px 0;
+                animation: fade-right .3s ease 1 forwards;
+
+                & ul {
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    & li a {
+                        font-size: 1.5rem;
+                        border: none;
+                    }
+                }
+
+                & .navbar-right {
+                    display: none;
+                }
+            }
+
 
             & ul {
                 display: flex;
@@ -175,10 +218,14 @@
                 }
 
                 & .tickets {
-                    display: inline-block;
+                    display: none;
                     height: 100%;
                     background-color: var(--primary-dark);
                     padding: 15px;
+
+                    @media screen and (min-width: 1200px) {
+                        display: inline-block;
+                    }
 
                     & img {
                         width: 155px
