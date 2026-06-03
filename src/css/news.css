@@ -18,7 +18,7 @@
     
 .frameNews {display:block;
     width: 15rem;
-    transform: rotate(-90deg);
+    rotate:-90deg;
     scale: 0.6;
     opacity:0.5;
 }
@@ -26,7 +26,7 @@
 .frame-content {position: absolute;
     top:50%;
     left:50%;
-    transform: translate(-50%, -60%);
+    transform:translate(-50%, -60%);
     text-align: center;
     opacity:0.5;
 }
@@ -43,6 +43,7 @@ h1 {width:fit-content;
     color: #C0B6B3;
 }
 
+
 #news-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -57,6 +58,7 @@ h1 {width:fit-content;
     padding-bottom: 3rem;
     align-items: center;
 }
+
 
 .card {
     box-shadow:
@@ -111,4 +113,17 @@ h1 {width:fit-content;
     width:1.8rem;
     vertical-align: middle;
     
+}
+
+@media screen and (max-width: 768px) {
+    #news-cards{
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #news-cards{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 }
