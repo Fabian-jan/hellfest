@@ -27,7 +27,26 @@
         </ul>
 
         <div class="navbar-right">
-            <a href="#" class="lang">UK</a>
+            <div class="colorz">
+                <button href="#" class="colorz-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path
+                            d="M290.4 70C288.9 66.4 285.4 64 281.5 64L262.5 64C258.6 64 255 66.4 253.6 70L232.9 121.7C229.7 129.7 218.3 129.7 215.1 121.7L194.4 70C192.9 66.4 189.4 64 185.5 64L176 64C149.5 64 128 85.5 128 112L128 320L512 320L512 112C512 85.5 490.5 64 464 64L358.5 64C354.6 64 351 66.4 349.6 70L328.9 121.7C325.7 129.7 314.3 129.7 311.1 121.7L290.4 70zM128 368L128 384C128 419.3 156.7 448 192 448L256 448L256 512C256 547.3 284.7 576 320 576C355.3 576 384 547.3 384 512L384 448L448 448C483.3 448 512 419.3 512 384L512 368L128 368zM320 528C311.2 528 304 520.8 304 512C304 503.2 311.2 496 320 496C328.8 496 336 503.2 336 512C336 520.8 328.8 528 320 528z" />
+                    </svg>
+                </button>
+                <div class="colorz-picker">
+                    <ul>
+                        <li class="color-2016"></li>
+                        <li class="color-2017"></li>
+                        <li class="color-2018"></li>
+                        <li class="color-2023"></li>
+                        <li class="color-2024"></li>
+                        <li class="color-2025"></li>
+                        <li class="color-2026"></li>
+                    </ul>
+                </div>
+            </div>
             <a href="#" class="tickets">
                 <img src="../src/assets/img/header/3-day-pass1.png" alt="Pass 3 days">
             </a>
@@ -132,8 +151,7 @@
                 display: flex;
             }
 
-            &.is-open {
-                display: flex;
+            &.menu-opened {
                 flex-direction: column;
                 position: absolute;
                 top: 108px;
@@ -201,21 +219,104 @@
                 height: 100%;
                 margin-left: auto;
 
-                & .lang {
-                    display: inline-block;
-                    height: 28px;
-                    width: 28px;
-                    background-image: url("../src/assets/img/header/bg-uk.png");
-                    background-repeat: no-repeat;
-                    background-size: 27px 28px;
-                    font-family: 'Titillium';
-                    font-weight: 400;
-                    font-size: .8rem;
-                    text-align: center;
-                    color: var(--tertiary-light);
-                    margin: var(--spacing-large);
-                    cursor: pointer;
+                & .colorz {
+                    position: relative;
+
+                    & .colorz-toggle {
+                        display: inline-block;
+                        height: 32px;
+                        width: 32px;
+                        background-color: transparent;
+                        background-repeat: no-repeat;
+                        background-size: 27px 28px;
+                        border: 1px solid var(--primary);
+                        font-family: 'Titillium';
+                        font-weight: 400;
+                        font-size: .8rem;
+                        text-align: center;
+                        color: var(--tertiary-light);
+                        padding-top: 5px;
+                        margin: var(--spacing-large);
+                        cursor: pointer;
+                        rotate: 45deg;
+                        scale: 1;
+                        transition: all 0.3s ease;
+
+                        &:focus,
+                        &:hover {
+                            outline: 3px solid var(--primary-dark);
+                            scale: 1.1;
+                            transition: all 0.3s ease;
+                        }
+
+                        svg {
+                            fill: white;
+                            width: 20px;
+                        }
+                    }
+
+                    & .colorz-picker {
+                        display: none;
+                        position: absolute;
+                        bottom: -30px;
+                        left: 50%;
+                        translate: -50%;
+                        background-color: var(--secondary);
+                        border: 1px solid var(--tertiary-dark);
+                        border-radius: 2px;
+                        padding: 5px;
+                        opacity: 0;
+                        animation: pop-in .3s ease 1 forwards;
+                        z-index: 50;
+
+                        & ul {
+                            display: flex;
+                            gap: 5px;
+
+                            & li {
+                                height: 30px;
+                                width: 30px;
+                                border-radius: 2px;
+                                cursor: pointer;
+
+                                &:focus,
+                                &:hover {
+                                    scale: 1.1;
+                                    transition: all 0.3s ease;
+                                }
+
+                                &.color-2016 {
+                                    background-color: #ef434f;
+                                }
+
+                                &.color-2017 {
+                                    background-color: #eec43a;
+                                }
+
+                                &.color-2018 {
+                                    background-color: #94cc8f;
+                                }
+
+                                &.color-2023 {
+                                    background-color: #01488f;
+                                }
+
+                                &.color-2024 {
+                                    background-color: #ff9138;
+                                }
+
+                                &.color-2025 {
+                                    background-color: #904bbb;
+                                }
+
+                                &.color-2026 {
+                                    background-color: #b6d00a;
+                                }
+                            }
+                        }
+                    }
                 }
+
 
                 & .tickets {
                     display: none;

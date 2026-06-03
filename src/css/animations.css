@@ -21,3 +21,19 @@
         translate: 0;
     }
 }
+
+@keyframes pop-in {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+
+    70% {
+        scale: 1.1;
+    }
+
+    to {
+        opacity: 100%;
+        scale: 1;
+    }
+}

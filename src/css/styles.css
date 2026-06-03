@@ -5,3 +5,15 @@
 @import "./layout.css";
 @import "./media-queries.css";
 @import "./animations.css";
+
+.menu-opened {
+    display: flex !important;
+}
+
+body {
+    background-image: linear-gradient(
+        to bottom,
+        var(--primary) 0%,
+        rgba(55, 51, 50, 1) 100%
+    );
+}
