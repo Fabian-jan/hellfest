@@ -27,6 +27,7 @@ export function changePrimary() {
             const hexColor = rgbToHex(backgroundColor);
             console.log(hexColor);
             body.style.setProperty('--primary', hexColor);
+            body.style.setProperty('--primary-dark', 'color-mix(in srgb, ' + hexColor + ' 80%, black)');
         });
     });
 }
