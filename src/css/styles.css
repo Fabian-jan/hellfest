@@ -5,3 +5,7 @@
 @import "./layout.css";
 @import "./media-queries.css";
 @import "./animations.css";
+
+.menu-opened {
+    display: flex !important;
+}
