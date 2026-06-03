@@ -17,6 +17,16 @@ function rgbToHex(rgb) {
         .join('');
 }
 
+// const hueMap = {
+//     'color-2016': 0,
+//     'color-2017': 50,
+//     'color-2018': 119,
+//     'color-2023': 214,
+//     'color-2024': 31,
+//     'color-2025': 2,
+//     'color-2026': 72,
+// };
+
 // change primary color picker
 export function changePrimary() {
     const colorItems = document.querySelectorAll('.colorz-picker li');
@@ -28,6 +38,9 @@ export function changePrimary() {
             console.log(hexColor);
             body.style.setProperty('--primary', hexColor);
             body.style.setProperty('--primary-dark', 'color-mix(in srgb, ' + hexColor + ' 80%, black)');
+            // const className = [...colorItem.classList].find(c => c.startsWith('color-'));
+            // body.style.setProperty('--hue', hueMap[className] + 'deg');
+
         });
     });
 }
