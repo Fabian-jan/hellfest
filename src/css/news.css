@@ -1,5 +1,3 @@
-@import url('/src/css/fonts.css');
-
 .banner {display:flex;
     background-image: url('/src/assets/img/news/news-images-banner.jpg');
     background-repeat: no-repeat;
