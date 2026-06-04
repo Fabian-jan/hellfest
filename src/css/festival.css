@@ -1,28 +1,76 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box !important;
-}
-
-.slide_video {
-    background-image: url(../assets/img/festival/bg-video.jpg);
-    width: 1486.4px;
-    height: 490.8px;
+.section_image {
+    width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-medium);
+
+    @media screen and (min-width: 768px) {
+        height: 600px;
+    }
+
+    &>div {
+        background-color: white;
+        width: 680PX;
+        padding: var(--spacing-large);
+        text-align: center;
+        opacity: 0;
+        translate: 0 50px;
+        animation: fade-in 2s 1 ease forwards;
+
+        @media screen and (min-width: 768px) {
+            margin: 0 100px 0;
+        }
+
+        & p {
+            font-family: 'Titillium';
+            font-weight: 400;
+
+            &:not(:first-child) {
+                margin-top: var(--spacing-small);
+            }
+        }
+    }
+
+    &:nth-child(even)>div {
+
+        @media screen and (min-width: 768px) {
+            margin: 0 0 0 100px;
+        }
+    }
+
+}
+
+.slide_video {
+    background-image: url(/src/assets/img/festival/bg-video.jpg);
+    height: 490px;
     margin-top: 105px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .title h1 {
     color: #e2ddda;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Tungsten_semibold';
-    font-size: 90px;
+    font-family: 'Tungsten';
+    font-weight: 500;
+    font-size: 3rem;
     letter-spacing: 2px;
     line-height: 90px;
     padding-top: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    translate: 0 50px;
+    animation: fade-in 1s 1 ease forwards;
+
+    @media screen and (min-width: 768px) {
+        font-size: 6rem;
+    }
 }
 
 .logo {
@@ -32,6 +80,9 @@
 .logo img {
     width: 400px;
     height: 200px;
+    opacity: 0;
+    translate: 0 50px;
+    animation: fade-in 1s 1 .5s ease forwards;
 }
 
 .button {
@@ -39,15 +90,19 @@
     justify-content: center;
     text-align: center;
     padding: 50px;
+    opacity: 0;
+    translate: 0 50px;
+    animation: fade-in 1s 1 0.8s ease forwards;
 }
 
 .button button {
     width: 150px;
     height: 40px;
-    background-color: #201c1d;
-    color: #ef434f;
-    font-family: 'Titillium_bold';
-    font-size: 14px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-family: 'Titillium';
+    font-weight: 700;
+    font-size: 0.9rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,110 +115,44 @@
 }
 
 .first_image {
-    position: relative;
-    background-image: url(../assets/img/festival/festival-01.jpg);
-    width: 1600.4px;
-    height: 600.8px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 0px;
-}
+    background-image: url(/src/assets/img/festival/festival-01.jpg);
 
-.texte_presentation p {
-    background-color: white;
-    width: 680PX;
-    padding: 40PX;
-    color: black;
-    text-align: center;
-    margin-left: 660PX;
-    font-family: 'Titillium';
-    position: absolute;
-    top: 100px;
-    left: 50PX;
+    @media screen and (min-width: 768px) {
+        justify-content: flex-end;
+    }
+
 }
 
 .second_image {
-    position: relative;
-    background-image: url(../assets/img/festival/festival-02.jpg);
-    width: 1600.4px;
-    height: 600.8px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 0px;
-}
+    background-image: url(/src/assets/img/festival/festival-02.jpg);
 
-.texte_hellfest p {
-    background-color: white;
-    width: 680PX;
-    padding: 40PX;
-    color: black;
-    text-align: center;
-    margin-left: 660PX;
-    font-family: 'Titillium';
-    position: absolute;
-    top: 100px;
-    right: 800px;
+    @media screen and (min-width: 768px) {
+        justify-content: flex-start;
+    }
 }
 
 .third_image {
-    position: relative;
-    background-image: url(../assets/img/festival/festival-03.jpg);
-    width: 1600.4px;
-    height: 600.8px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 0px;
-}
+    background-image: url(/src/assets/img/festival/festival-03.jpg);
 
-.description p {
-    background-color: white;
-    width: 680PX;
-    padding: 40PX;
-    color: black;
-    text-align: center;
-    margin-left: 660PX;
-    font-family: 'Titillium';
-    position: absolute;
-    top: 100px;
-    left: 50PX;
+    @media screen and (min-width: 768px) {
+        justify-content: flex-end;
+    }
 }
 
 .fourth_image {
-    position: relative;
-    background-image: url(../assets/img/festival/festival-04.jpg);
-    width: 1600.4px;
-    height: 600.8px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 0px;
-}
+    background-image: url(/src/assets/img/festival/festival-04.jpg);
 
-.final p {
-    background-color: white;
-    width: 680PX;
-    padding: 40PX;
-    color: black;
-    text-align: center;
-    margin-left: 660PX;
-    font-family: 'Titillium';
-    position: absolute;
-    top: 100px;
-    right: 800px;
+    @media screen and (min-width: 768px) {
+        justify-content: flex-start;
+    }
 }
 
 .last_image {
-    position: relative;
-    background-image: url(../assets/img/festival/festival-05.jpg);
-    width: 100%;
-    min-height: 500px;
+    background-image: url(/src/assets/img/festival/festival-05.jpg);
+    height: 500px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 0px;
 }
 
 .conclusion p {
@@ -184,30 +173,4 @@
     margin: 40px auto 0 auto;
     width: 120px;
     height: auto;
-}
-
-
-
-@font-face {
-    font-family: 'Tungsten_semibold';
-    src: url('../assets/fonts/Tungsten-Semibold.otf') format('opentype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Titillium_bold';
-    src: url('../assets/fonts/titillium-bold-webfont.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Titillium';
-    src: url('../assets/fonts/titillium-regular-webfont.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
 }

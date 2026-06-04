@@ -2,14 +2,13 @@
 
     <div class="navbar-header">
         <a class="navbar-brand" href="/index.html">
-            <img src="../src/assets/img/header/hellfest-logo.png" alt="Hellfest 2K16 Logo">
+            <img src="/src/assets/img/header/hellfest-logo.png" alt="Hellfest 2K16 Logo">
             <div class="when-where">
                 <div class="when">17-18-19 JUIN 2016</div>
                 <div class="where">CLISSON FRANCE</div>
             </div>
         </a>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -28,9 +27,33 @@
         </ul>
 
         <div class="navbar-right">
-            <a href="#" class="lang">UK</a>
+            <div class="colorz">
+                <button href="#" class="colorz-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125" x="0px" y="0px">
+                        <path
+                            d="M76.21,6.06c-4.01-.52-7.45,2.61-7.45,6.52V48.04c0,5.69-4.63,10.31-10.31,10.31-1.16,0-2.31-.2-3.39-.57-1.18,4.4-5.2,7.65-9.96,7.65h-2.48c1.64,1.16,3.04,2.58,4.19,4.24,1.52,2.2,2.31,4.4,2.7,5.95,.28,1.11-.52,2.21-1.66,2.3-.91,.07-1.73-.52-1.96-1.41-.32-1.24-.96-3.06-2.24-4.85-2.92-4.11-7.71-6.21-14.24-6.24-.93,0-1.81-.62-1.96-1.55-.2-1.17,.7-2.19,1.84-2.19h15.58c3.34,0,6.33-2.4,6.75-5.71,.52-4.01-2.61-7.45-6.52-7.45h-14c-3.81,0-7.07,1.25-9.44,3.62-2.31,2.31-3.58,5.59-3.58,9.25,0,3.93,.67,7.76,1.99,11.4,1.42,3.92,4.15,9.51,9.04,13.89,5.43,4.86,12.46,7.33,20.89,7.33s15.72-2.58,21.19-7.68c4.88-4.55,7.55-10.3,8.94-14.33,1.18-3.45,1.79-7.09,1.79-10.81V12.81c0-3.34-2.4-6.33-5.71-6.76Z" />
+                        <path
+                            d="M31.09,44.79h.15V12.58c0-3.63-2.95-6.58-6.58-6.58s-6.58,2.95-6.58,6.58V50.54c.3-.36,.61-.7,.94-1.03,3.04-3.04,7.32-4.71,12.07-4.71h0Z" />
+                        <path
+                            d="M48.13,45.25v-9.2c0-3.63-2.95-6.58-6.58-6.58s-6.58,2.95-6.58,6.58v8.74h10.12c1.06,0,2.08,.16,3.04,.46h0Z" />
+                        <path
+                            d="M55.32,53.83c.95,.52,2.03,.79,3.12,.79,3.63,0,6.58-2.95,6.58-6.58v-11.98c0-3.63-2.95-6.58-6.58-6.58s-6.58,2.95-6.58,6.58v11.29c1.86,1.63,3.14,3.91,3.46,6.49h0Z" />
+                    </svg>
+                </button>
+                <div class="colorz-picker">
+                    <ul>
+                        <li class="color-2016"></li>
+                        <li class="color-2017"></li>
+                        <li class="color-2018"></li>
+                        <li class="color-2023"></li>
+                        <li class="color-2024"></li>
+                        <li class="color-2025"></li>
+                        <li class="color-2026"></li>
+                    </ul>
+                </div>
+            </div>
             <a href="#" class="tickets">
-                <img src="../src/assets/img/header/3-day-pass1.png" alt="Pass 3 days">
+                <img src="/src/assets/img/header/3-day-pass1.png" alt="Pass 3 days">
             </a>
         </div>
 
@@ -62,8 +85,16 @@
                 padding: var(--spacing-small);
 
                 & img {
-                    width: 190px;
+                    width: 120px;
                     height: auto;
+
+                    @media screen and (min-width: 640px) {
+                        width: 150px;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                        width: 190px;
+                    }
                 }
 
                 & .when-where {
@@ -76,15 +107,31 @@
                     & .when {
                         font-family: 'Tungsten';
                         font-weight: 500;
-                        font-size: 1.35rem;
+                        font-size: 1.1rem;
                         color: var(--tertiary);
+
+                        @media screen and (min-width: 640px) {
+                            font-size: 1.2rem;
+                        }
+
+                        @media screen and (min-width: 992px) {
+                            font-size: 1.35rem;
+                        }
                     }
 
                     & .where {
                         font-family: 'Tungsten';
                         font-weight: 500;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         color: var(--primary);
+
+                        @media screen and (min-width: 640px) {
+                            font-size: 1.1rem;
+                        }
+
+                        @media screen and (min-width: 992px) {
+                            font-size: 1.2rem;
+                        }
                     }
                 }
             }
@@ -92,20 +139,25 @@
             & .navbar-toggle {
                 display: none;
                 position: absolute;
-                top: 15px;
-                right: 20px;
+                top: 50%;
+                right: var(--spacing-large);
+                translate: 0 -50%;
                 width: 30px;
                 height: 30px;
                 background-color: transparent;
                 border: none;
                 cursor: pointer;
 
+                @media screen and (max-width: 991px) {
+                    display: block;
+                }
+
                 & .icon-bar {
                     display: block;
                     width: 100%;
-                    height: 4px;
+                    height: 3px;
                     background-color: var(--tertiary);
-                    margin-bottom: 5px;
+                    margin-bottom: 8px;
                     transition: all 0.3s ease-in-out;
                 }
 
@@ -114,11 +166,45 @@
         }
 
         & .navbar-collapse {
-            display: flex;
+            display: none;
             align-items: center;
             justify-content: space-between;
             height: 100%;
             width: 100%;
+
+            @media screen and (min-width: 992px) {
+                display: flex;
+            }
+
+            &.menu-opened {
+                flex-direction: column;
+                position: absolute;
+                top: 108px;
+                right: 0;
+                width: 80%;
+                height: calc(100vh - 108px);
+                background-color: color-mix(in srgb, var(--primary) 80%, transparent);
+                padding: 20px 0;
+                opacity: 0;
+                translate: 50px 0;
+                animation: fade-right .3s ease 1 forwards;
+
+                & ul {
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    & li a {
+                        font-size: 1.5rem;
+                        border: none;
+                    }
+                }
+
+                & .navbar-right {
+                    display: none;
+                }
+            }
+
 
             & ul {
                 display: flex;
@@ -158,27 +244,116 @@
                 height: 100%;
                 margin-left: auto;
 
-                & .lang {
-                    display: inline-block;
-                    height: 28px;
-                    width: 28px;
-                    background-image: url("../src/assets/img/header/bg-uk.png");
-                    background-repeat: no-repeat;
-                    background-size: 27px 28px;
-                    font-family: 'Titillium';
-                    font-weight: 400;
-                    font-size: .8rem;
-                    text-align: center;
-                    color: var(--tertiary-light);
-                    margin: var(--spacing-large);
-                    cursor: pointer;
+                & .colorz {
+                    position: relative;
+
+                    & .colorz-toggle {
+                        display: inline-block;
+                        height: 32px;
+                        width: 32px;
+                        background-color: transparent;
+                        background-repeat: no-repeat;
+                        background-size: 27px 28px;
+                        border: 1px solid var(--primary);
+                        font-family: 'Titillium';
+                        font-weight: 400;
+                        font-size: .8rem;
+                        text-align: center;
+                        color: var(--tertiary-light);
+                        padding-top: 4px;
+                        padding-left: 4px;
+                        margin: var(--spacing-large);
+                        cursor: pointer;
+                        rotate: 45deg;
+                        scale: 1;
+                        transition: all 0.3s ease;
+
+                        &:focus,
+                        &:hover {
+                            outline: 3px solid var(--primary-dark);
+                            scale: 1.1;
+                            transition: all 0.3s ease;
+                        }
+
+                        svg {
+                            fill: white;
+                            width: 20px;
+                            rotate: -45deg;
+                        }
+                    }
+
+                    & .colorz-picker {
+                        display: none;
+                        position: absolute;
+                        bottom: -30px;
+                        left: 50%;
+                        translate: -50%;
+                        background-color: var(--secondary);
+                        border: 1px solid var(--tertiary-dark);
+                        border-radius: 2px;
+                        padding: 5px;
+                        opacity: 0;
+                        animation: pop-in .3s ease 1 forwards;
+                        z-index: 50;
+
+                        & ul {
+                            display: flex;
+                            gap: 5px;
+
+                            & li {
+                                height: 30px;
+                                width: 30px;
+                                border-radius: 2px;
+                                cursor: pointer;
+
+                                &:focus,
+                                &:hover {
+                                    scale: 1.1;
+                                    transition: all 0.3s ease;
+                                }
+
+                                &.color-2016 {
+                                    background-color: #ef434f;
+                                }
+
+                                &.color-2017 {
+                                    background-color: #eec43a;
+                                }
+
+                                &.color-2018 {
+                                    background-color: #94cc8f;
+                                }
+
+                                &.color-2023 {
+                                    background-color: #01488f;
+                                }
+
+                                &.color-2024 {
+                                    background-color: #ff9138;
+                                }
+
+                                &.color-2025 {
+                                    background-color: #904bbb;
+                                }
+
+                                &.color-2026 {
+                                    background-color: #b6d00a;
+                                }
+                            }
+                        }
+                    }
                 }
 
+
                 & .tickets {
-                    display: inline-block;
+                    display: none;
                     height: 100%;
                     background-color: var(--primary-dark);
                     padding: 15px;
+
+                    @media screen and (min-width: 1200px) {
+                        display: inline-block;
+                    }
 
                     & img {
                         width: 155px

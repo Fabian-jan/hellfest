@@ -41,15 +41,16 @@
             <a href="#">mentions légales</a>
             <a href="#">crédits</a>
         </div>
-    </div>   
+    </div>
 </div>
 <style>
     footer {
         position: relative;
-        &::before{
-            content:"";
-            width:100%;
-            height:9px;
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 9px;
             background-image: url("/src/assets/img/footer/decoupe.png");
             background-size: 374px 9px;
             background-repeat: no-repeat;
@@ -60,11 +61,12 @@
 
         & .partners {
             background-color: var(--tertiary);
+
             & ul {
                 list-style-type: none;
                 text-align: center;
                 padding: 50px 0 25px;
-                
+
                 background-image: url("/src/assets/img/footer/Hfooter.png");
                 background-position-x: 50%;
                 background-position-y: 15px;
@@ -74,6 +76,7 @@
                 & li {
                     display: inline-block;
                     margin: 10px 35px;
+
                     & img {
                         height: 24px;
 
@@ -84,34 +87,48 @@
         }
 
         & .container-footer {
-            background-color: var(--secondary);
+            background-color: var(--tertiary-dark);
+            padding: var(--spacing-small);
 
-            & .container{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            & .container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
 
-                & > img {
+                &>img {
                     height: 60px;
                 }
+
                 & .social-logo {
                     height: 60px;
                     line-height: 60px;
                     text-align: center;
-    
-                    & a img{
+
+                    & a img {
                         margin: 0 var(--spacing-small);
                         width: 26px;
                         vertical-align: middle;
                     }
                 }
-    
+
                 & .menu-footer {
-                    height: 60px;
-                    line-height: 60px;
-                    text-align: right;
-                    
-                    & a{
+                    line-height: 25px;
+                    font-size: 0.9rem;
+                    text-align: center;
+                    flex-basis: 100%;
+                    margin: var(--spacing-medium) 0;
+
+                    @media screen and (min-width: 992px) {
+                        flex-basis: 60%;
+                        height: 60px;
+                        line-height: 60px;
+                        font-size: 1rem;
+                        text-align: right;
+                        margin: 0;
+                    }
+
+                    & a {
                         margin: 0 var(--spacing-small);
                         letter-spacing: 2px;
                         color: var(--tertiary);
@@ -122,7 +139,7 @@
                 }
             }
 
-                
+
         }
 
     }
