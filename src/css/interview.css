@@ -1,0 +1,100 @@
+body {
+    padding-top: 108px
+}
+
+main {
+    margin: 5rem;
+    background: white;
+}
+
+h1 {
+    font-family: "Tungsten";
+    font-weight: 600;
+    font-size: 2.1rem;
+    margin: 1.2rem;
+    text-align: center;
+    padding-top: 1rem
+}
+
+.date {
+    font-family: "Titillium";
+    font-weight: 400;
+    color: ;
+    padding: 1rem;
+}
+
+h2 {
+    font-family: "Titillium";
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem
+}
+
+.question {
+    font-family: "Titillium";
+    font-size: 1rem;
+    font-weight: 700;
+    color: ;
+    padding: 1rem;
+}
+
+.answer {
+    font-family: "Titillium";
+    font-size: 1rem;
+    color: black;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.authors {
+    font-family: "Titillium";
+    font-size: 1rem;
+    font-weight: 700;
+    color: ;
+    padding: 0.6rem;
+}
+
+.location {
+    font-family: "Titillium";
+    font-size: 1rem;
+    font-weight: 700;
+    color: ;
+    padding: 0.6rem;
+}
+
+.thanks {
+    font-family: "Titillium";
+    font-size: 1rem;
+    font-weight: 700;
+    color: ;
+    padding: 0.6rem;
+}
+
+.reseau {display:flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    gap:2rem;
+}
+
+.reseau a {
+    display: inline-flex;
+    background: url("/src/assets/img/news/texture-rouge.png");
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem
+}
+
+.reseau a:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(255, 0, 85, 0.4);
+}
+
+.reseau a img {
+    width: 1rem
+}
+
+.share {
+    color: white
+}
