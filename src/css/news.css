@@ -98,8 +98,12 @@ h1 {width:fit-content;
 .resume{
     padding: 0.5rem;
 }
-
-.card p button {
+.card-link {
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit;        /* Conserve les couleurs de texte initiales de ton article */
+    display: block;        /* Permet à la balise <a> de prendre toute la largeur/hauteur de la carte */
+}
+a .card p button {
     padding: 5px 20px;
     font-family: 'Tungsten';
     font-size: 1.3rem;
@@ -110,7 +114,7 @@ h1 {width:fit-content;
     cursor:pointer;
 }
 
-.card p button div img{
+a .card p button div img{
     width:1.8rem;
     vertical-align: middle;
     margin-right:0.7rem;
