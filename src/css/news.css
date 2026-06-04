@@ -1,49 +1,46 @@
-.banner {
-    display: flex;
-    background-image: url("/src/assets/img/news/news-images-banner.jpg");
+.banner {display:flex;
+    background-image: url('/src/assets/img/news/news-images-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 40vh;
     margin-top: 108px;
-    align-items: center;
-}
+    align-items:center;
+    }
 
-.text-banner {
+.text-banner{
     position: relative;
-    display: inline-block;
+    display:inline-block;
+    
 }
-
-.frameNews {
-    display: block;
+    
+.frameNews {display:block;
     width: 15rem;
-    rotate: -90deg;
+    rotate:-90deg;
     scale: 0.6;
-    opacity: 0.5;
+    opacity:0.5;
 }
 
-.frame-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
+.frame-content {position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -60%);
     text-align: center;
-    opacity: 0.5;
+    opacity:0.5;
 }
 
-.logoHFnews {
-    width: fit-content;
-    scale: 0.7;
+.logoHFnews {width:fit-content;
+    scale: 0.7
 }
 
-h1 {
-    width: fit-content;
+h1 {width:fit-content;
     transform: rotate(-90deg);
     font-size: 2.5rem;
-    font-family: "Tungsten";
+    font-family: 'Tungsten';
     font-weight: 400;
-    color: #c0b6b3;
+    color: #C0B6B3;
 }
+
 
 #news-cards {
     display: grid;
@@ -56,68 +53,86 @@ h1 {
     align-items: center;
 }
 
+
 .card {
-    box-shadow: -6px 4px 6px 2px rgba(0, 0, 0, 0.1);
+    box-shadow:
+    -6px 4px 6px 2px rgba(0, 0, 0, 0.1);
     background: white;
     overflow: hidden;
     cursor: pointer;
+    transition:all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
-
+.card:hover {transform:translateY(-0.8px);
+    scale: 1.02;
+}
 .card-img {
     width: 100%;
     object-fit: cover;
 }
 
 .card-body {
-    padding: 15px;
+    padding: 15px
 }
 
 .card h2 {
-    font-family: "Titillium", sans-serif;
+    font-family: 'Titillium', sans-serif;
     font-size: 1rem;
     padding: 0.5rem;
 }
 
 .card h3 {
-    font-family: "Titillium", sans-serif;
+    font-family: 'Titillium', sans-serif;
     font-size: 0.9rem;
     color: #5a5655;
     padding: 0.5rem;
 }
 
 .card p {
-    font-family: "Titillium", sans-serif;
+    font-family: 'Titillium', sans-serif;
     font-size: 0.9rem;
 }
-.resume {
+.resume{
     padding: 0.5rem;
 }
-
-.card p button {
+.card-link {
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit;        /* Conserve les couleurs de texte initiales de ton article */
+    display: block;        /* Permet à la balise <a> de prendre toute la largeur/hauteur de la carte */
+}
+a .card p button {
     padding: 5px 20px;
-    font-family: "Tungsten";
+    font-family: 'Tungsten';
     font-size: 1.3rem;
-    background: url("/src/assets/img/news/texture-lien.png") center right
-        no-repeat;
+    background: url('/src/assets/img/news/texture-lien.png') center right no-repeat;
     color: #c2b8b4;
     text-align: right;
     width: 100%;
-    cursor: pointer;
+    cursor:pointer;
 }
 
-.card p button img {
-    width: 1.8rem;
+a .card p button div img{
+    width:1.8rem;
     vertical-align: middle;
+    margin-right:0.7rem;
+    
+}
+.button-slider {
+    transition: transform 0.3s ease-in-out;
+}
+
+.button-slider:hover{
+    transform:translateX(1rem)
 }
 
 @media screen and (max-width: 768px) {
-    #news-cards {
-        grid-template-columns: repeat(2, 1fr);
+    #news-cards{
+        grid-template-columns: repeat(2, 1fr)
     }
 }
 
 @media screen and (max-width: 480px) {
-    #news-cards {
+    #news-cards{
         grid-template-columns: repeat(1, 1fr);
+
     }
 }

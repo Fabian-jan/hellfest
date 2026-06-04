@@ -12,7 +12,8 @@ if (container) {
             name: "Interview exclusive pour hellfest.fr:Papa Emeritus III (GHOST)",
             image: "/src/assets/img/news/ghost-news.jpg",
             date: "11-04-2016",
-            text: "«Nous sommes en train d’écrire notre propre histoire en ce moment.» – Papa Emeritus III – La Cigale, Paris– 09/12/2015..."
+            text: "«Nous sommes en train d’écrire notre propre histoire en ce moment.» – Papa Emeritus III – La Cigale, Paris– 09/12/2015...",
+            link: "new/news-ghost.html",
         },
         {
             name: "Interview exclusive pour hellfest.fr: MASS HYSTERIA",
@@ -168,13 +169,18 @@ if (container) {
 
     news.forEach((item) => {
         container.innerHTML += `
-    <article class="card">
-    <img src="${item.image}" alt="${item.name}" class="card-img">
-    <h2>${item.name}</h2>
-    <h3>${item.date}</h3>
-    <p class="resume">${item.text}</p>
-    <p><button><img src="/src/assets/img/news/arrow-light.png">Lire la suite</button></p>
-    </article>`;
+         <a href="${item.link}" class="card-link">
+            <article  class="card">
+                <img src="${item.image}" alt="${item.name}" class="card-img">
+                <h2>${item.name}</h2>
+                <h3>${item.date}</h3>
+                <p class="resume">${item.text}</p>
+                <p >
+                <button >
+                <div href="${item.link}"class="button-slider">
+                <img src="/src/assets/img/news/arrow-light.png">Lire la suite</div></button></p>
+            </article>
+            </a>`;
 
-    })
+    });
 }
