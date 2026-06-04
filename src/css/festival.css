@@ -5,16 +5,25 @@
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: var(--spacing-medium);
+
+    @media screen and (min-width: 768px) {
+        height: 600px;
+    }
 
     &>div {
         background-color: white;
         width: 680PX;
         padding: var(--spacing-large);
         text-align: center;
-        margin: 0 100px 0;
         opacity: 0;
         translate: 0 50px;
         animation: fade-in 2s 1 ease forwards;
+
+        @media screen and (min-width: 768px) {
+            margin: 0 100px 0;
+        }
 
         & p {
             font-family: 'Titillium';
@@ -27,7 +36,10 @@
     }
 
     &:nth-child(even)>div {
-        margin: 0 0 0 100px;
+
+        @media screen and (min-width: 768px) {
+            margin: 0 0 0 100px;
+        }
     }
 
 }
@@ -36,6 +48,9 @@
     background-image: url(/src/assets/img/festival/bg-video.jpg);
     height: 490px;
     margin-top: 105px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .title h1 {
@@ -44,7 +59,7 @@
     text-align: center;
     font-family: 'Tungsten';
     font-weight: 500;
-    font-size: 6rem;
+    font-size: 3rem;
     letter-spacing: 2px;
     line-height: 90px;
     padding-top: 40px;
@@ -52,6 +67,10 @@
     opacity: 0;
     translate: 0 50px;
     animation: fade-in 1s 1 ease forwards;
+
+    @media screen and (min-width: 768px) {
+        font-size: 6rem;
+    }
 }
 
 .logo {
@@ -97,29 +116,43 @@
 
 .first_image {
     background-image: url(/src/assets/img/festival/festival-01.jpg);
-    height: 600px;
-    justify-content: flex-end;
+
+    @media screen and (min-width: 768px) {
+        justify-content: flex-end;
+    }
+
 }
 
 .second_image {
     background-image: url(/src/assets/img/festival/festival-02.jpg);
-    height: 600px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: flex-start;
+    }
 }
 
 .third_image {
     background-image: url(/src/assets/img/festival/festival-03.jpg);
-    height: 600px;
-    justify-content: flex-end;
+
+    @media screen and (min-width: 768px) {
+        justify-content: flex-end;
+    }
 }
 
 .fourth_image {
     background-image: url(/src/assets/img/festival/festival-04.jpg);
-    height: 600px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: flex-start;
+    }
 }
 
 .last_image {
     background-image: url(/src/assets/img/festival/festival-05.jpg);
     height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .conclusion p {
